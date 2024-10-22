@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFCFC"
+    tools:context=".AnaSayfa">
+
+
+
+            <!-- Spor Salonu Planı Kartı -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewGymPlan1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                app:cardBackgroundColor="@color/my_secondary"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="20dp"
+                android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+
+                    <Button
+                        android:id="@+id/btnjimnastik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_below="@id/textViewGymTitle"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="-90dp"
+                        android:text="JIMNASTIK"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp"
+                        android:backgroundTint="@color/orange"/>
+
+                    <ImageView
+                        android:id="@+id/imageViewGymPlan"
+                        android:layout_width="181dp"
+                        android:layout_height="139dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="-9dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/sporplan" />
+
+                    <TextView
+                        android:id="@+id/textViewGymTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imageViewGymPlan"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="-81dp"
+                        android:text="Spor Salonu Planı"
+                        android:textColor="@android:color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/textViewGymSubtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textViewGymTitle"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="11dp"
+                        android:layout_marginTop="15dp"
+                        android:text="En İyi Egzersizler"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:backgroundTint="@color/halfblack"/>
+
+
+                    <Button
+                        android:id="@+id/planibaslat1"
+                        android:layout_width="273dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textViewGymSubtitle"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="49dp"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:onClick="plan1"
+                        android:text="Plani Başlat"
+                        android:backgroundTint="@color/my_primary"/>
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewGymPlan"
+                android:layout_below="@+id/cardViewGymPlan1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+
+                android:layout_marginBottom="5dp"
+                android:background="@color/my_secondary"
+                app:cardBackgroundColor="@color/my_secondary"
+                app:cardCornerRadius="30dp"
+
+                app:cardElevation="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+
+                    <Button
+                        android:id="@+id/buttonGymSubtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_below="@id/textViewGymTitle"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="-90dp"
+                        android:text="EV"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp"
+                        android:backgroundTint="@color/orange"/>
+
+                    <ImageView
+                        android:id="@+id/imageViewGymPlan"
+                        android:layout_width="181dp"
+                        android:layout_height="139dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginEnd="-1dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/evplan" />
+
+                    <TextView
+                        android:id="@+id/textViewGymTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imageViewGymPlan"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="-81dp"
+                        android:text="Ev Planı"
+                        android:textColor="@android:color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/textViewGymSubtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textViewGymTitle"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="11dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Ekipmansız"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:backgroundTint="@color/halfblack"/>
+
+                    <Button
+                        android:id="@+id/planibaslat2"
+                        android:layout_width="273dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textViewGymSubtitle"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="49dp"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:onClick="plan2"
+                        android:text="Plani Başlat"
+                        android:backgroundTint="@color/my_primary"/>
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FF5722"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAnasayfa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:background="@android:color/transparent"
+            android:onClick="btnAnasayfa"
+            android:paddingLeft="18dp"
+            android:text="Anasayfa" />   <!-- padding Metni 18dp sola kaydırır -->
+
+        <Button
+            android:id="@+id/btnFayda"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="9dp"
+            android:background="@android:color/transparent"
+            android:onClick="btnFayda"
+            android:text="Gereken" />
+
+        <Button
+            android:id="@+id/btnUyeSorgu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:background="@android:color/transparent"
+            android:onClick="btnUyeSorgu"
+            android:text="Üye Sorgula" />
+
+        <Button
+            android:id="@+id/btnHk"
+            android:layout_width="21dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:background="@android:color/transparent"
+            android:onClick="btnHk"
+            android:text="Hakkımızda" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

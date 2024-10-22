@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".SporSalonu">
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewGymPlan1"
+            android:layout_width="match_parent"
+            android:layout_height="650dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            app:cardBackgroundColor="@color/my_secondary"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:id="@+id/cardTitle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Karın Kasları"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/cardTitle11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cardTitle1"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Eğri Yüzey Bankı Mekikleri"
+                    android:textAlignment="center"
+                    android:textColor="@color/halfblack"
+                    android:textSize="30sp" />
+
+                <View
+                    android:id="@+id/divider1"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/cardTitle11"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/black"
+                    />
+                <!-- Görsel -->
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:id="@+id/cardImage1"
+                    android:layout_width="482dp"
+                    android:layout_height="200dp"
+                    android:layout_below="@id/divider1"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="-14dp"
+                    android:layout_marginTop="30dp"
+                    android:scaleType="centerCrop"
+                    app:iss_title_background="@drawable/spbir" />
+
+
+                <View
+                    android:id="@+id/imageDivider1"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/cardImage1"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:layout_width="418dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageDivider1"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/halfblack"
+                    android:paddingBottom="15dp"
+                    android:text=" **Karın Kaslarının Güçlenmesi: Bu egzersiz, rectus abdominis (karın kasları) üzerinde büyük bir yük oluşturarak, bu kas grubunun güçlenmesine yardımcı olur.  **Eğri bir bankta (decline bench) ayaklarınızı güvenli bir şekilde yerleştirin.
+Karın kaslarınızı sıkın ve üst bedeninizi yavaşça yukarı doğru kaldırın."
+                    android:textColor="@color/white"
+                    android:textSize="17dp" />
+
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewGymPlan2"
+            android:layout_width="match_parent"
+            android:layout_height="650dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            app:cardBackgroundColor="@color/b"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:id="@+id/cardTitle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="68dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Sırt kasları"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/cardTitle22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cardTitle2"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Barfiks"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/halfblack"
+                    android:textSize="30sp" />
+
+                <View
+                    android:id="@+id/divider2"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/cardTitle22"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/black" />
+                <!-- Görsel -->
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:id="@+id/cardImage2"
+                    android:layout_width="482dp"
+                    android:layout_height="247dp"
+                    android:layout_below="@id/divider2"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="-14dp"
+                    android:layout_marginTop="30dp"
+                    android:scaleType="centerCrop"
+                    app:iss_title_background="@drawable/spikibir" />
+
+
+                <View
+                    android:id="@+id/imageDivider2"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/cardImage2"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/halfblack"
+                    android:layout_below="@id/imageDivider2"
+                    android:layout_marginTop="20dp"
+                    android:textSize="16dp"
+                    android:paddingBottom="10dp"
+                    android:text="**Sırt Kaslarının Güçlenmesi: Barfiks, latissimus dorsi (kanat kasları) ve diğer sırt kaslarını etkili bir şekilde çalıştırır.-----
+**Çekirdek kaslarınızı sıkın ve vücudunuzu yukarı doğru çekin. Çeneniz barın üzerine çıkana kadar çekmeye devam edin.
+**Yavaşça başlangıç pozisyonuna dönün, kollarınızı tam olarak düzleştirin.
+"
+                    android:textColor="@color/white" />
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewGymPlan3"
+            android:layout_width="match_parent"
+            android:layout_height="650dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            app:cardBackgroundColor="@color/h"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:id="@+id/cardTitle3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Bisepsler"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/cardTitle33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cardTitle3"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:text="Halterli Pazu Bükme"
+                    android:textColor="@color/halfblack"
+                    android:textSize="30sp" />
+
+                <View
+                    android:id="@+id/divider3"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/cardTitle33"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/black" />
+                <!-- Görsel -->
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:id="@+id/cardImage3"
+                    android:layout_width="482dp"
+                    android:layout_height="200dp"
+                    android:layout_below="@id/divider3"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="-14dp"
+                    android:layout_marginTop="30dp"
+                    android:scaleType="centerCrop"
+                    app:iss_title_background="@drawable/spucbir" />
+
+
+                <View
+                    android:id="@+id/imageDivider3"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/cardImage3"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:layout_width="442dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/halfblack"
+                    android:layout_below="@id/imageDivider3"
+                    android:layout_marginTop="20dp"
+                    android:textSize="17dp"
+                    android:text="**Biceps Kaslarının Güçlenmesi: Ana hedef biceps brachii kaslarıdır, bu kasların büyümesi ve güçlenmesi sağlanır.--------------
+**Dirseklerinizi vücudunuza yakın tutarak, halteri kontrollü bir şekilde yukarı doğru bükün. Hareketin tepe noktasında biceps kaslarınızı tamamen sıkıştırın.
+**Yavaşça ve kontrollü bir şekilde halteri başlangıç pozisyonuna indirin."
+                    android:textColor="@color/white" />
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewGymPlan4"
+            android:layout_width="match_parent"
+            android:layout_height="650dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            app:cardBackgroundColor="@color/g"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:id="@+id/cardTitle4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="129dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="Bacaklar"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/cardTitle44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cardTitle4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Makinede Ön Bacak"
+                    android:textColor="@color/halfblack"
+                    android:textSize="30sp" />
+
+                <View
+                    android:id="@+id/divider44"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/cardTitle44"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/black" />
+                <!-- Görsel -->
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:id="@+id/cardImage4"
+                    android:layout_width="482dp"
+                    android:layout_height="200dp"
+                    android:layout_below="@id/divider44"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="-14dp"
+                    android:layout_marginTop="30dp"
+                    android:scaleType="centerCrop"
+                    app:iss_title_background="@drawable/spdortbir" />
+
+
+                <View
+                    android:id="@+id/imageDivider4"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/cardImage4"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:layout_width="442dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/halfblack"
+                    android:layout_below="@id/imageDivider4"
+                    android:layout_marginTop="20dp"
+                    android:paddingBottom="15dp"
+                    android:textSize="17dp"
+                    android:text="**Kuadriseps Kaslarının Güçlenmesi: Ana hedef kuadriseps kaslarıdır, bu kasların büyümesi ve güçlenmesi sağlanır.
+**Bacaklarınızı düz bir şekilde yukarı doğru kaldırarak ayak pedini itin. Hareketin tepe noktasında kuadriseps kaslarınızı tamamen sıkıştırın.
+**Yavaşça ve kontrollü bir şekilde başlangıç pozisyonuna geri dönün."
+                    android:textColor="@color/white" />
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="85dp" />
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FF5722"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAnasayfa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:background="@android:color/transparent"
+            android:onClick="btnAnasayfa"
+            android:paddingLeft="18dp"
+            android:text="Anasayfa" />   <!-- padding Metni 18dp sola kaydırır -->
+
+        <Button
+            android:id="@+id/btnFayda"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="9dp"
+            android:background="@android:color/transparent"
+            android:onClick="btnFayda"
+            android:text="Gereken" />
+
+        <Button
+            android:id="@+id/btnUyeSorgu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:background="@android:color/transparent"
+            android:onClick="btnUyeSorgu"
+            android:text="Üye Sorgula" />
+
+        <Button
+            android:id="@+id/btnHk"
+            android:layout_width="21dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:background="@android:color/transparent"
+            android:onClick="btnHk"
+            android:text="Hakkımızda" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:id="@+id/headerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Spor Yapmadan Önce ve Sonra Dikkat Edilmesi Gerekenler Hususlar"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+    <!-- Başlığın altına çizgi eklemek için View -->
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/headerTextView"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="10dp"
+        android:background="#FF5722" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@id/headerTextView"
+        android:layout_above="@id/footerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="710dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        card_view:cardBackgroundColor="@color/white">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/disscroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <!-- Swimming Card -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginBottom="16dp"
+                    card_view:cardBackgroundColor="@color/a"
+                    card_view:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/img_2" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:orientation="vertical"
+                            android:paddingStart="20dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Esneme Hareketleri Yapın"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <ScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp">
+
+                                <TextView
+                                    android:id="@+id/text1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:paddingBottom="5dp"
+                                    android:text="Spora başlamadan önce esnemek hareket
+                   çeşitliliğine yatkın olabilmesi için vücudunuzu bu sürece hazırlar.Kaslarınızı tam hareket aralığında çalıştıracak dinamik bir esnemeyle
+                   başlarsanız, koordinasyon ve oksijen akışını arttırabilirsiniz.
+                   Bu da daha iyi bir performans ve daha az sakatlık riski anlamına gelir."
+
+                                    android:textColor="@android:color/white"
+                                    android:textSize="16sp" />
+                            </ScrollView>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginBottom="16dp"
+                    card_view:cardBackgroundColor="@color/b"
+                    card_view:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/gereken2" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:orientation="vertical"
+                            android:paddingStart="20dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Spordan Önce  Midenizi Yormayın"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <ScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="8dp">
+
+                                <TextView
+                                    android:id="@+id/text2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:paddingBottom="5dp"
+                                    android:text="Egzersizden 2-4 saat önce,düşük yağlı, yüksek karbonhidratlı ve orta düzey proteinli yiyecekler
+                 tüketin. Muz gibi kolay sindirilebilir meyveler uygundur.
+                 Yeşil yapraklı sebzeler ve baharatlı yiyeceklerden kaçının;
+                 sindirimi kolay smoothie'leri tercih edin."
+                                    android:textColor="@android:color/white"
+                                    android:textSize="16sp" />
+                            </ScrollView>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginBottom="16dp"
+                    card_view:cardBackgroundColor="@color/c"
+                    card_view:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/gereken3" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:orientation="vertical"
+                            android:paddingStart="20dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Gece Uykusuna Önem Verin"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <ScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="8dp">
+
+                                <TextView
+                                    android:id="@+id/text3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:paddingBottom="5dp"
+                                    android:text="Vücut, çoğunlukla uyku sırasında kendini toparladığı için, uyku düzenini sağlıklı bir zemine
+                                    oturtmanız oldukça önemlidir.İyi bir dinlenmeye ihtiyacı olan vücudunuzun toparlanması ve
+                                      yenilenmesi için uyku düzeninize önem verin."
+                                    android:textColor="@android:color/white"
+                                    android:textSize="16sp" />
+                            </ScrollView>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginBottom="16dp"
+                    card_view:cardBackgroundColor="@color/e"
+                    card_view:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/gereken4" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:orientation="vertical"
+                            android:paddingStart="20dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Soğumayı Atlamayın"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <ScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="8dp">
+
+                                <TextView
+                                    android:id="@+id/text4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:paddingBottom="5dp"
+                                    android:text="Soğumayı atlamak, hareket açılarını daraltabilir
+                                    ve buna bağlı olarak da sakatlık riskini yükseltebilir.
+                                     Egzersiz sonrası özellikle ön bacak veya baldır kasları gibi yorgun bölgelere odaklanarak gerilmiş kasları geçici
+                                      olarak rahatlatabilirsiniz"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="16sp" />
+                            </ScrollView>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginBottom="16dp"
+                    card_view:cardBackgroundColor="@color/f"
+                    card_view:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/gereken5" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:orientation="vertical"
+                            android:paddingStart="20dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Sıvı Almayı Unutmayın"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <ScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="8dp">
+
+                                <TextView
+                                    android:id="@+id/text5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:paddingBottom="5dp"
+                                  android:text="Spor yaparken su içmek için yeterli vakti bulamayabilirsiniz. Bu yüzden, egzersizini
+                                     tamamladıktan sonra daha fazla su içmeyi unutmamalısınız."
+                                    android:textColor="@android:color/white"
+                                    android:textSize="16sp" />
+                            </ScrollView>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginBottom="16dp"
+                    card_view:cardBackgroundColor="@color/i"
+                    card_view:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/gereken6" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:orientation="vertical"
+                            android:paddingStart="20dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Kas Gevşeticilerden Yararlanın"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <ScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="8dp">
+
+                                <TextView
+                                    android:id="@+id/text6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:paddingBottom="5dp"
+                                    android:text="Özellikle yoğun egzersiz sonrasında kas
+                                     ağrılarına neden olacak enflamasyonu ve hücresel yıkımları
+                                     azaltmak için kas gevşeticilerden yararlanabilirsiniz."
+                                    android:textColor="@android:color/white"
+                                    android:textSize="16sp" />
+                            </ScrollView>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/footerLayout"
+        android:layout_alignParentBottom="true"
+        android:background="#FF5722"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="0dp">
+
+        <Button
+            android:id="@+id/btnAnasayfa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:background="@android:color/transparent"
+            android:onClick="btnAnasayfa"
+            android:paddingLeft="18dp"
+            android:text="Anasayfa" />   <!-- padding Metni 18dp sola kaydırır -->
+
+        <Button
+            android:id="@+id/btnFayda"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="9dp"
+            android:background="@android:color/transparent"
+            android:onClick="btnFayda"
+            android:text="Gereken" />
+
+        <Button
+            android:id="@+id/btnUyeSorgu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:background="@android:color/transparent"
+            android:onClick="btnUyeSorgu"
+            android:text="Üye Sorgula" />
+
+        <Button
+            android:id="@+id/btnHk"
+            android:layout_width="21dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:background="@android:color/transparent"
+            android:onClick="btnHk"
+            android:text="Hakkımızda" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="txt"
+    tools:context=".Hakkimizda">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="34dp"
+        android:src="@drawable/hk_24" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="76dp"
+        android:layout_marginRight="43dp"
+        android:layout_marginLeft="43dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="HAKKIMIZDA"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/textView"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:background="#FF5722" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="900dp"
+        android:layout_above="@+id/alt"
+        android:layout_below="@+id/divider"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="10dp"
+        app:cardBackgroundColor="@color/my_secondary"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">   <!-- gölge efekti -->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <TextView
+
+                    android:id="@+id/text1"
+                    android:layout_width="396dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginRight="7dp"
+                    android:background="@color/halfblack"
+                    android:layout_marginLeft="2dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text=" Biz, sağlıklı yaşam herkes için erişilebilir kılmayı parçalayan tutkulu bir ekibiz. FitLife olarak, size sağlıklı yaşam yolculuğunuzda rehberlik ve destek olmak için buradayız. Misyonumuz, fitness yolculuğunuzu eğlenceli, motive edici ve sürdürülebilir kılmaktır."
+                    android:textColor="@color/white"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="129dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="2dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_below="@+id/text1"
+                    android:layout_marginTop="55dp"
+                    android:background="@color/halfblack"
+                    android:text=" Neden FitLife? "
+                    android:textColor="@color/white"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="397dp"
+                    android:layout_height="102dp"
+                    android:layout_marginLeft="2dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_below="@+id/text2"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/halfblack"
+                    android:text=" Kişiselleştirilmiş Programlar: Hedeflerinize, ihtiyaçlarınıza ve kondisyon seviyenize göre özel olarak belirlenen antrenman ve antrenman programları. "
+                    android:textColor="@color/white"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_width="365dp"
+                    android:layout_height="78dp"
+                    android:layout_below="@+id/text3"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="7dp"
+                    android:background="@color/halfblack"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text=" Esnek Antrenmanlar: Zaman ve mekan kısıtlaması olmadan, istenilen her egzersizi yapabilme imkanı. "
+                    android:textColor="@color/white"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/text5"
+                    android:layout_width="361dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_below="@+id/text4"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/halfblack"
+                    android:text=" Uzman Desteği: Alanında uzman eğitmenler ve beslenme uzmanlarından gelen tavsiyeler ve destek "
+                    android:textColor="@color/white"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/text6"
+                    android:layout_width="99dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_below="@+id/text5"
+                    android:layout_marginTop="55dp"
+                    android:background="@color/halfblack"
+                    android:text=" Biz Kimiz? "
+                    android:textColor="@color/white"
+                    android:textSize="17dp" />
+
+                <TextView
+
+                    android:id="@+id/text7"
+                    android:layout_width="430dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_below="@+id/text6"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/halfblack"
+                    android:text="Biz, spor bilimcileri, antrenman yapanlar, kişisel antrenörler ve teknoloji geliştiricilerinden oluşan bir ekibiz. Amacımız, finansal açıdan size en iyi sonuçları sunmak ve sağlıklı yaşam tarzını sürdürülebilir kılmaktır."
+                    android:textColor="@color/white"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/text8"
+                    android:layout_width="125dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/text7"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginTop="54dp"
+                    android:background="@color/halfblack"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text=" İletişim"
+                    android:textColor="@color/white"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/text9"
+                    android:layout_width="404dp"
+                    android:layout_height="43dp"
+                    android:layout_below="@+id/text8"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:background="@color/halfblack"
+                    android:text=" E-Posta: muhammetfisek121@gmail.com "
+                    android:textColor="@color/white"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/text10"
+                    android:layout_width="236dp"
+                    android:layout_height="52dp"
+                    android:layout_marginLeft="7dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_below="@+id/text9"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/halfblack"
+                    android:text=" Telefon: 0501 135 07 04  "
+                    android:textColor="@color/white"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/text11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text10"
+                    android:layout_marginLeft="2dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/halfblack"
+                    android:onClick="txt"
+                    android:text=" WebSite: https://muhendislik.ebyu.edu.tr/as/bilgisayar-muhendisligi/ "
+                    android:textColor="@color/white"
+                    android:textSize="17dp" />
+
+                <LinearLayout
+                    android:id="@+id/lin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text11"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                   <Button
+                       android:id="@+id/ebyu"
+                       android:layout_width="60dp"
+                       android:layout_height="60dp"
+                       android:layout_margin="12dp"
+                       android:foreground="@drawable/hkebyu"
+                       android:onClick="btnebyu"
+                       android:clickable="true"
+                       android:focusable="true"
+                       />
+
+
+                    <Button
+                        android:id="@+id/github"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="12dp"
+                        android:foreground="@drawable/hkgithub"
+                        android:onClick="btngithub"
+                        android:clickable="true"
+                        android:focusable="true"/>
+
+                    <Button
+                        android:id="@+id/insta"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="12dp"
+                        android:foreground="@drawable/hkinsta"
+                        android:onClick="btninsta"
+                        android:clickable="true"
+                        android:focusable="true"/>
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/text12"
+                    android:layout_width="208dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/lin"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="80dp"
+                    android:background="@color/halfblack"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="10dp"
+                    android:text=" Bizi Değerlendirin "
+                    android:textColor="@color/white"
+                    android:textSize="17dp" />
+
+                <FrameLayout
+                    android:id="@+id/frame"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text12"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/white"
+                    android:padding="10dp">
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:progressTint="@android:color/holo_orange_dark"
+                    android:layout_marginLeft="60dp"/>
+                </FrameLayout>
+                <Button
+                    android:id="@+id/sendButton"
+                    android:layout_width="120dp"
+                    android:layout_height="70dp"
+                    android:text="Gönder"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="110dp"
+                    android:backgroundTint="@color/my_primary"
+                    android:layout_below="@id/frame"
+                    />
+
+            </RelativeLayout>
+
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+
+        android:id="@+id/alt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FF5722"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAnasayfa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:background="@android:color/transparent"
+            android:onClick="btnAnasayfa"
+            android:paddingLeft="18dp"
+            android:text="Anasayfa" />   <!-- padding Metni 18dp sola kaydırır -->
+
+        <Button
+            android:id="@+id/btnFayda"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="9dp"
+            android:background="@android:color/transparent"
+            android:onClick="btnFayda"
+            android:text="Gereken" />
+
+        <Button
+            android:id="@+id/btnUyeSorgu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:background="@android:color/transparent"
+            android:onClick="btnUyeSorgu"
+            android:text="Üye Sorgula" />
+
+        <Button
+            android:id="@+id/btnHk"
+            android:layout_width="21dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:background="@android:color/transparent"
+            android:onClick="btnHk"
+            android:text="Hakkımızda" />
+
+    </LinearLayout>
+</RelativeLayout>

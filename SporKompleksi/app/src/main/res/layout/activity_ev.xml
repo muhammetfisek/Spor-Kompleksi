@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ev">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewGymPlan1"
+                android:layout_width="match_parent"
+                android:layout_height="650dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                app:cardBackgroundColor="@color/my_secondary"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+
+                    <TextView
+                        android:id="@+id/cardTitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Baldır"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/black"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/cardTitle11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/cardTitle1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:text="Ayak Parmak Yükselişleri"
+                        android:textColor="@color/halfblack"
+                        android:textSize="27sp" />
+
+                    <View
+                        android:id="@+id/divider1"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@id/cardTitle11"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/black"
+                        />
+                    <!-- Görsel -->
+                    <com.denzcoskun.imageslider.ImageSlider
+                        android:id="@+id/cardImage1"
+                        android:layout_width="482dp"
+                        android:layout_height="200dp"
+                        android:layout_below="@id/divider1"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="-14dp"
+                        android:layout_marginTop="30dp"
+                        android:scaleType="centerCrop"
+                        app:iss_period="1000"
+                        app:iss_title_background="@drawable/evbirbir" />
+
+
+                    <View
+                        android:id="@+id/imageDivider1"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@id/cardImage1"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/black" />
+
+                    <TextView
+                        android:layout_width="442dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imageDivider1"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="9dp"
+                       android:paddingBottom="15dp"
+                        android:textSize="17dp"
+                        android:background="@color/halfblack"
+                        android:text=" **Baldır Kaslarının Güçlenmesi : Ayakparmak yükselişleri, baldır kaslarının büyümesine ve güçlenmesine yardımcı olur.
+**Ayak parmaklarınızın üzerinde yükselin, baldır kaslarınızı tamamen sıkıştırarak yukarıya doğru kalkın.
+**Yavaşça ve kontrollü bir şekilde başlangıç ​​pozisyonlarına geri döner, topuklarınızı zemine değdirin veya basamaktan biraz daha aşağıda inerek kaslarınızı esnetin.
+" android:textColor="@color/white" />
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewGymPlan2"
+                android:layout_width="match_parent"
+                android:layout_height="770dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                app:cardBackgroundColor="@color/b"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+
+                    <TextView
+                        android:id="@+id/cardTitle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Göğüs"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/black"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/cardTitle22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/cardTitle2"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:text="Şınavlar"
+                        android:textColor="@color/halfblack"
+                        android:textSize="30sp" />
+
+                    <View
+                        android:id="@+id/divider2"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@id/cardTitle22"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/black" />
+                    <!-- Görsel -->
+                    <com.denzcoskun.imageslider.ImageSlider
+                        android:id="@+id/cardImage2"
+                        android:layout_width="482dp"
+                        android:layout_height="247dp"
+                        android:layout_below="@id/divider2"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="-14dp"
+                        android:layout_marginTop="30dp"
+                        android:scaleType="centerCrop"
+                        app:iss_title_background="@drawable/evikibir" />
+
+
+                    <View
+                        android:id="@+id/imageDivider2"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@id/cardImage2"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/black" />
+
+                    <TextView
+                        android:layout_width="442dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/halfblack"
+                        android:layout_below="@id/imageDivider2"
+                        android:paddingBottom="15dp"
+                        android:layout_marginTop="20dp"
+                        android:textSize="16dp"
+                        android:text="**Göğüs Kaslarının Güçlendirilmesi: Göğüs kaslarının güçlendirilmesi, pektoralis majör ve minör gibi göğüs kaslarının hedefleri, bu kasların güçlenmesine ve büyümesine katkıda bulunur.
+                        **Yerde yüz üstü uzanın, ellerinizi omuzlarında taşıyabilir ve avuç içlerinizle yere basın. Ayak parmaklarınızı yere koyun, vücudunuzda düz bir çizgi oluşturacak şekilde ayaklarınızı gerin.
+**Ellerinizi bükerek vücudunuzu yukarı doğru itin, kollarınız tamamen düz olana kadar. Kollarınızı bükerek vücudunuzu başlangıç pozisyonuna indirin, göğsünüzü yere yaklaştırın ancak yere dokunmayın"
+
+                        android:textColor="@color/white" />
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewGymPlan3"
+                android:layout_width="match_parent"
+                android:layout_height="700dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                app:cardBackgroundColor="@color/h"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+
+                    <TextView
+                        android:id="@+id/cardTitle3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="Trisepsler"
+                        android:textColor="@color/black"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/cardTitle33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/cardTitle3"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"
+                        android:text="Triseps Geri İtiş"
+                        android:textColor="@color/halfblack"
+                        android:textSize="30sp" />
+
+                    <View
+                        android:id="@+id/divider3"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@id/cardTitle33"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/black" />
+                    <!-- Görsel -->
+                    <com.denzcoskun.imageslider.ImageSlider
+                        android:id="@+id/cardImage3"
+                        android:layout_width="482dp"
+                        android:layout_height="200dp"
+                        android:layout_below="@id/divider3"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="-14dp"
+                        android:layout_marginTop="30dp"
+                        android:scaleType="centerCrop"
+                        app:iss_title_background="@drawable/evucbir" />
+
+
+                    <View
+                        android:id="@+id/imageDivider3"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@id/cardImage3"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/black" />
+
+                    <TextView
+                        android:layout_width="442dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/halfblack"
+                        android:layout_below="@id/imageDivider3"
+                        android:layout_marginTop="20dp"
+                        android:paddingBottom="15dp"
+                        android:textSize="17dp"
+                        android:text="**Triceps Kaslarının Güçlendirilmesi: Triceps geri itiş, triceps brachii kaslarını hedefler ve güçlendirir.
+**Dirseklerinizi sabit tutun ve kollerinizi iklimlendirip kontrollü bir şekilde vücudunuza paralel bir şekilde aşağı doğru indirin. Sadece dirseklerinizi bükün, omuzlarınızı sabit tutun.
+Alt konumda, kollarınız tamamen düz olana kadar aşağıya indirin.
+Kollarınızı başlangıç ​​pozisyonlarına doğru şekilde yerleştirin ve yukarı itin, triceps kaslarınızı sıkarak kontrol edin..
+**"
+                        android:textColor="@color/white" />
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewGymPlan4"
+                android:layout_width="match_parent"
+                android:layout_height="650dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                app:cardBackgroundColor="@color/g"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+
+                    <TextView
+                        android:id="@+id/cardTitle4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Omuzlar"
+                   android:layout_centerHorizontal="true"
+                        android:textColor="@color/black"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/cardTitle44"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/cardTitle4"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Yana Açışlar"
+               android:layout_centerHorizontal="true"
+                        android:textColor="@color/halfblack"
+                        android:textSize="30sp" />
+
+                    <View
+                        android:id="@+id/divider44"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@id/cardTitle44"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/black" />
+                    <!-- Görsel -->
+                    <com.denzcoskun.imageslider.ImageSlider
+                        android:id="@+id/cardImage4"
+                        android:layout_width="482dp"
+                        android:layout_height="200dp"
+                        android:layout_below="@id/divider44"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="-14dp"
+                        android:layout_marginTop="30dp"
+                        android:scaleType="centerCrop"
+                        app:iss_title_background="@drawable/evdortbir" />
+
+
+                    <View
+                        android:id="@+id/imageDivider4"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@id/cardImage4"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/black" />
+
+                    <TextView
+                        android:layout_width="442dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/halfblack"
+                        android:layout_below="@id/imageDivider4"
+                        android:paddingBottom="15dp"
+                        android:layout_marginTop="20dp"
+                        android:textSize="17dp"
+                        android:text="**Omuz Kaslarının Güçlendirilmesi: Omuzlar için yana açışlar, özellikle yan deltoid kaslarını hedef alarak omuz kaslarının güçlenmesine katkı sağlanır.
+**Dirseklerinizi sabit tutun ve kollerinizi nemlendirin ve kontrollü bir şekilde yan noktalarda bulunun. Omuz hizasına kadar ayarlanabilir.
+Üst noktada, kollarınızı bir saniye kadar duraklatın ve omuz kaslarınızı sıkın.
+Kollarınızı değiştirir "
+                        android:textColor="@color/white" />
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="85dp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FF5722"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAnasayfa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:background="@android:color/transparent"
+            android:onClick="btnAnasayfa"
+            android:paddingLeft="18dp"
+            android:text="Anasayfa" />   <!-- padding Metni 18dp sola kaydırır -->
+
+        <Button
+            android:id="@+id/btnFayda"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="9dp"
+            android:background="@android:color/transparent"
+            android:onClick="btnFayda"
+            android:text="Gereken" />
+
+        <Button
+            android:id="@+id/btnUyeSorgu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:background="@android:color/transparent"
+            android:onClick="btnUyeSorgu"
+            android:text="Üye Sorgula" />
+
+        <Button
+            android:id="@+id/btnHk"
+            android:layout_width="21dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:background="@android:color/transparent"
+            android:onClick="btnHk"
+            android:text="Hakkımızda" />
+
+    </LinearLayout>
+</RelativeLayout>

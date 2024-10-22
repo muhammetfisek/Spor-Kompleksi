@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    tools:context=".KayitOlSayfasi">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/my_secondary"
+        android:alpha="0.7"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="28dp"
+        android:layout_above="@+id/card_view">
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-20dp"
+        app:cardCornerRadius="28dp"
+        android:id="@+id/card_view">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="28dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ÜYE OL"
+                android:textColor="@color/my_primary"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lütfen Gerekli Bilgileri Doldurunuz"
+                android:alpha="0.7"/>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-Mail :"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/kayıt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/email_icon"
+                android:hint="Lütfen E-mail Giriniz!!!"
+                android:inputType="textEmailAddress" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Şifre :"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/kayıt_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/key_icon"
+                android:hint="Lütfen Şifrenizi Giriniz!!!"
+                android:inputType="numberPassword" />
+
+
+            <!-- Boşluk bırakır -->
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+
+            <!-- Cinsiyet Başlangıç -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cinsiyet:"
+                    android:textStyle="bold"
+                    android:layout_marginTop="13dp"/>
+               <RadioGroup
+                   android:id="@+id/radioGroup"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_marginLeft="16dp">
+
+                   <RadioButton
+                       android:id="@+id/erkek"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Erkek"
+                       android:layout_marginLeft="50dp" />
+                   <RadioButton
+                       android:id="@+id/kadin"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Kadın"
+                       android:layout_marginLeft="50dp"/>
+               </RadioGroup>
+        </LinearLayout>
+            <!-- Cinsiyet Bitiş  -->
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+
+            <!-- ALAN Başlangıç -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alan:       "
+                    android:textStyle="bold"
+                    android:layout_marginTop="13dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="65dp">
+
+                        <CheckBox
+                            android:id="@+id/checkEv"
+                            android:layout_width="118dp"
+                            android:layout_height="match_parent"
+                            android:text="Ev"
+                            android:checked="false"/>
+
+                        <CheckBox
+                            android:id="@+id/checkSalon"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:text="Salon"
+                            android:checked="false"/>
+
+
+                    </LinearLayout>
+            </LinearLayout>
+            <!-- ALAN Bitiş  -->
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/girisButon"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:onClick="kytOl"
+                android:text="Kayıt Ol "
+                android:textSize="20sp"
+                app:cornerRadius="32dp"
+                android:backgroundTint="@color/my_primary"/>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="15dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
